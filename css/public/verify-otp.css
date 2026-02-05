@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.right-main{
+    background-color: #64646b;
+}
+#image_1{
+    border-bottom-right-radius: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    height: 65%;
+}
+#image_2{
+    border-top-right-radius: 8px;
+    margin-right: 8px;
+    height: 35%;
+}
+#image_3{
+    border-bottom-left-radius: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    height: 35%;
+}
+#image_4{
+    margin-left: 8px;
+    border-top-left-radius: 8px;
+    height: 65%;
+}
+#enter_otp{
+    line-height: 40px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #666666;
+    font-weight: 400;
+}
+#description{
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+#otp{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+}
+.resend{
+    border: 0px;
+    background-color: white;
+    color: #4540E1;
+    border: 2px solid #DDE4EE;
+    width: 48%;
+}
+.resend:hover{
+    border: none;
+    background-color: white;
+    color: black;
+}
+.signin{
+    border: 0px;
+    background-color: #4540E1;
+    color: white;
+    width: 48%;
+    margin-left: 7px;
+}
+.signin:hover{
+    background-color: white;
+    color: black;
+}
+#extra_div{
+    width: 2%;
+}
+.form-items{
+    height: 48px;
+}
+#condition{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.link-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(69, 64, 225);
+}
+.bw-image {
+    filter: grayscale(100%) brightness(0.75) contrast(0.8) sepia(10%) hue-rotate(200deg);
+}
+.text-center{
+    color: #666666;
+}

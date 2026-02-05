@@ -1,0 +1,90 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#image_1{
+    border-bottom-right-radius: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    height: 65%;
+}
+#image_2{
+    border-top-right-radius: 8px;
+    margin-right: 8px;
+    height: 35%;
+}
+#image_3{
+    border-bottom-left-radius: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    height: 35%;
+}
+#image_4{
+    margin-left: 8px;
+    border-top-left-radius: 8px;
+    height: 65%;
+}
+.text-center{
+    color: #666666;
+}
+.right-main{
+    background-color: #64646b;
+}
+#sign_in{
+    line-height: 40px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #666666;
+    font-weight: 400;
+}
+#name{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+}
+#email{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+}
+.btn{
+    height: 48px;
+    background-color: #4540E1;
+    color: #E1E0FA;
+}
+.form-items{
+    height: 48px;
+}
+#condition{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.link-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(69, 64, 225);
+}
+#service_partner_question{
+    font-weight: 600;
+    color: #666666;
+}
+.bw-image {
+    filter: grayscale(100%) brightness(0.75) contrast(0.8) sepia(10%) hue-rotate(200deg);
+}
+hr{
+    width: 47%;
+}
+#hr1{
+    margin-right: 7px;
+}
+#hr2{
+    margin-left: 7px;
+}
+#or{
+    display: inline-block; 
+    margin-top: 6px; 
+    font-size: 12px;
+}
