@@ -1,0 +1,315 @@
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+#logo-navbar {
+    margin-left: -7px;
+}
+
+.nav-color {
+    color: #666666;
+}
+
+.button-purple {
+    background-color: #4540E1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.toggler-style:focus {
+    border-color: #4540E1;
+    border-width: 1px;
+}
+
+/* =====================================================
+   SERVICE DETAILS PAGE
+===================================================== */
+
+@media (min-width: 768px) {
+
+    /* Entire gallery height */
+    .service-gallery {
+        height: 340px;
+    }
+
+    /* Both left & right main columns */
+    .service-gallery > .col-md-6 {
+        height: 100%;
+    }
+
+    /* Big image fills full height */
+    .service-main-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Right inner row takes full height */
+    .service-gallery > .col-md-6 > .row {
+        height: 95%;
+    }
+
+    /* Each small image column = half height */
+    .service-gallery .col-6 {
+        height: 50%;
+    }
+
+    /* Small images fill their boxes */
+    .service-sub-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Mobile: natural stacking */
+@media (max-width: 767px) {
+
+    .service-gallery {
+        height: auto;
+    }
+
+    .service-main-img,
+    .service-sub-img {
+        height: auto;
+    }
+}
+
+
+/* Include / Exclude icon */
+.icon-small {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+}
+
+/* Sidebar service cards */
+.service-side-card {
+    border: 1px solid #E5E5E5;
+    transition: 0.2s ease;
+    background-color: #ffffff;
+}
+
+.service-side-card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar image */
+.side-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+/* Add button */
+.card-btn {
+    width: 60px;
+    height: 24px;
+    top: 58px;
+    left: 6px;
+    background-color: #ffffff;
+    color: #4540E1;
+    font-weight: 700;
+    border: 1px solid #DDE4EE;
+}
+.view_all{
+    background-color: #ffffff;
+    color: #4540E1;
+    font-weight: 700;
+    border: 1px solid #DDE4EE;
+}
+
+.card-btn:hover , .view_all:hover{
+    background-color: #4540E1;
+    color: #ffffff;
+}
+/* Responsive fix */
+@media (max-width: 991px) {
+    .service-main-img {
+        height: auto;
+    }
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: #F5F5F5;
+}
+
+.footer-text {
+    font-size: 16px;
+}
+
+.footer-text-heading {
+    font-size: 16px;
+}
+
+#logo_image {
+    width: 162px;
+    max-width: 100%;
+}
+
+.social_media {
+    width: 44px;
+}
+
+.social_media_div {
+    height: 44px;
+}
+
+.download-icon {
+    width: 125%;
+}
+
+/* Footer Responsive */
+
+@media (max-width: 875px) {
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-icon {
+        width: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    #copyright {
+        font-size: 13px;
+    }
+}
+#footer_top_div{
+    padding-left: 7rem; 
+    padding-right: 5rem;
+}
+#footer_bottom_div{
+    padding-left: 7rem; 
+    padding-right: 5rem;
+}
+.container-fluid-main{
+    padding-left: 7rem;
+    padding-right: 5rem;
+}
+@media(max-width : 590px){
+    #footer_top_div{
+        padding-left: 3rem; 
+        padding-right: 3rem;
+    }
+    #footer_bottom_div{
+        padding-left: 3rem; 
+        padding-right: 3rem;
+    }
+    .container-fluid-main{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media(max-width : 410px){
+    #footer_top_div{
+        padding-left: 1rem; 
+        padding-right: 0rem;
+    }
+    #footer_bottom_div{
+        padding-left: 1rem; 
+        padding-right: 0rem;
+    }
+    .container-fluid-main{
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+}
+
+
+
+/* Bigger Screen Center Content Properly */
+
+@media (min-width: 1400px) {
+    #footer_top_div{
+        padding-left: 11rem; 
+        padding-right: 11rem;
+    }
+    #footer_bottom_div{
+        padding-left: 11rem; 
+        padding-right: 11rem;
+    }
+    .container-fluid-main{
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+}
+@media (min-width: 1550px) {
+    #footer_top_div{
+        padding-left: 17rem; 
+        padding-right: 17rem;
+    }
+    #footer_bottom_div{
+        padding-left:17rem; 
+        padding-right: 17rem;
+    }
+    .container-fluid-main{
+        padding-left: 17rem;
+        padding-right: 17rem;
+    }
+}
+@media (min-width: 1800px) {
+    #footer_top_div{
+        padding-left: 20rem; 
+        padding-right: 20rem;
+    }
+    #footer_bottom_div{
+        padding-left:20rem; 
+        padding-right: 20rem;
+    }
+    .container-fluid-main{
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+@media (min-width: 1950px) {
+    #footer_top_div{
+        padding-left: 25rem; 
+        padding-right: 25rem;
+    }
+    #footer_bottom_div{
+        padding-left:25rem; 
+        padding-right: 25rem;
+    }
+    .container-fluid-main{
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+}
+@media (min-width: 2150px) {
+    #footer_top_div{
+        padding-left: 30rem; 
+        padding-right: 30rem;
+    }
+    #footer_bottom_div{
+        padding-left:30rem; 
+        padding-right: 30rem;
+    }
+    .container-fluid-main{
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+}
+@media (min-width: 2300px) {
+    #footer_top_div{
+        padding-left: 33rem; 
+        padding-right: 33rem;
+    }
+    #footer_bottom_div{
+        padding-left:33rem; 
+        padding-right: 33rem;
+    }
+    .container-fluid-main{
+        padding-left: 33rem;
+        padding-right: 33rem;
+    }
+}

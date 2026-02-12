@@ -1,0 +1,245 @@
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+#logo-navbar {
+    margin-left: -7px;
+}
+
+.nav-color {
+    color: #666666;
+}
+
+.button-purple {
+    background-color: #4540E1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.toggler-style:focus {
+    border-color: #4540E1;
+    border-width: 1px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background-color:  #F5F5F5;
+}
+.footer-text {
+  font-size: 16px;
+}
+.footer-text-heading{
+    font-size: 16px;
+}
+
+#logo_image{
+    width:162px ; 
+    max-width: 100%;
+}
+.social_media{
+    width: 44px;
+}
+.social_media_div{
+    height: 44px;
+}
+.download-icon{
+    width: 125%;
+}
+@media(min-width : 1600px){
+    .download-icon{
+        width: 115%;
+    }
+}
+@media(max-width : 1200px){
+    .download-icon{
+        width: 115%;
+    }
+}
+@media(max-width : 767px){
+    .download-icon{
+        width: auto;
+    }
+}
+
+@media (max-width: 875px) {
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    #copyright {
+        font-size: 13px;
+    }
+}
+#footer_top_div{
+    padding-left: 7rem; 
+    padding-right: 5rem;
+}
+#footer_bottom_div{
+    padding-left: 7rem; 
+    padding-right: 5rem;
+}
+.container-fluid-main{
+    padding-left: 7rem;
+    padding-right: 5rem;
+}
+@media(max-width : 590px){
+    #footer_top_div{
+        padding-left: 3rem; 
+        padding-right: 3rem;
+    }
+    #footer_bottom_div{
+        padding-left: 3rem; 
+        padding-right: 3rem;
+    }
+    .container-fluid-main{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media(max-width : 410px){
+    #footer_top_div{
+        padding-left: 1rem; 
+        padding-right: 0rem;
+    }
+    #footer_bottom_div{
+        padding-left: 1rem; 
+        padding-right: 0rem;
+    }
+    .container-fluid-main{
+        padding-left: 1rem;
+        padding-right: 0rem;
+    }
+}
+
+
+/* =====================================================
+   Bigger Screen Center Content Properly
+===================================================== */
+
+@media (min-width: 1400px) {
+    #footer_top_div{
+        padding-left: 11rem; 
+        padding-right: 11rem;
+    }
+    #footer_bottom_div{
+        padding-left: 11rem; 
+        padding-right: 11rem;
+    }
+    .container-fluid-main{
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+}
+@media (min-width: 1550px) {
+    #footer_top_div{
+        padding-left: 17rem; 
+        padding-right: 17rem;
+    }
+    #footer_bottom_div{
+        padding-left:17rem; 
+        padding-right: 17rem;
+    }
+    .container-fluid-main{
+        padding-left: 17rem;
+        padding-right: 17rem;
+    }
+}
+@media (min-width: 1800px) {
+    #footer_top_div{
+        padding-left: 20rem; 
+        padding-right: 20rem;
+    }
+    #footer_bottom_div{
+        padding-left:20rem; 
+        padding-right: 20rem;
+    }
+    .container-fluid-main{
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+@media (min-width: 1950px) {
+    #footer_top_div{
+        padding-left: 25rem; 
+        padding-right: 25rem;
+    }
+    #footer_bottom_div{
+        padding-left:25rem; 
+        padding-right: 25rem;
+    }
+    .container-fluid-main{
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+}
+@media (min-width: 2150px) {
+    #footer_top_div{
+        padding-left: 30rem; 
+        padding-right: 30rem;
+    }
+    #footer_bottom_div{
+        padding-left:30rem; 
+        padding-right: 30rem;
+    }
+    .container-fluid-main{
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+}
+@media (min-width: 2300px) {
+    #footer_top_div{
+        padding-left: 33rem; 
+        padding-right: 33rem;
+    }
+    #footer_bottom_div{
+        padding-left:33rem; 
+        padding-right: 33rem;
+    }
+    .container-fluid-main{
+        padding-left: 33rem;
+        padding-right: 33rem;
+    }
+}
+
+
+/* Main Content */
+.contact-img {
+    filter: brightness(0.75); 
+}
+.main-row{
+    padding-left: 70px; 
+}
+@media(max-width : 991px){
+    .main-row{
+        padding-left: 10px;
+    }
+}
+.email-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    display: inline-block;
+}
+.contact-text{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.send_message{
+    width: 171px;
+    height: 48px;
+    font-weight : bold;
+    border: 0px;
+    background-color: #4540E1;
+    color: white;
+}
