@@ -72,7 +72,7 @@
                         <div class="col-2 img2 border rounded d-flex justify-content-center align-items-center" style="width: 44px; height: 44px;">
                             <img src="../../images/public/EnvelopeSimple2.svg" alt="email">
                         </div>
-                        <span class="col-10 ps-4 email-text">example.email@domain.com</span>
+                        <span class="col-10 ps-4 email-text" data-bs-toggle="tooltip" data-bs-placement="top" title="example.email@domain.com"> example.email@domain.com</span>
                     </div>
                 </div>
                 <div class="location">
@@ -175,7 +175,16 @@
             </div>
         </div>
     </footer>
-
-    <script src="../../js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').each(function () {
+                new bootstrap.Tooltip(this);
+            });
+        });
+    </script>
+    
 </body>
 </html>
