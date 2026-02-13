@@ -1,0 +1,22 @@
+#sign_in {
+    max-width: 400px;
+    background: white;
+}
+
+#otp_button {
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0px;
+    background-color: #4540E1;
+    color: #E1E0FA;
+}
+
+input::placeholder {
+    font-size: 12px;
+    font-weight: bold;   
+}
+
+.sign_in_text {
+    font-size: large;
+}

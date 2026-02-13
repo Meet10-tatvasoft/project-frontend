@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./select_payment_method.css">
+   
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+
+ 
+</head>
+ 
+<body>
+    <div class="shadow rounded p-4" id="select_payment_method">
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold sign_in_text">Select Payment Method</span>
+            <button class="border-0 bg-transparent p-0">
+                <img class="border-0" src="/images/X.png">
+            </button>
+        </div>
+        <div>
+  
+           <div>
+            <button id="payment_method" class="badge rounded-pill  mt-4 ">
+                Debit/Credit Card
+            </button>
+            <button id="payment_method" class="badge rounded-pill  mt-4 ms-2">
+                Cash
+            </button>
+           </div>
+
+            <div class=" d-flex justify-content-end pt-4">
+                <button class="rounded-pill p-2" id="cancel_btn">Cancel</button>
+                <button class="rounded-pill ms-2 save_btn p-2">Save</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+ 
+</html>

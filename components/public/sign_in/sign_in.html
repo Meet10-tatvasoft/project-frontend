@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sign_in.css">
+   
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+ 
+</head>
+ 
+<body>
+    <div id="sign_in" class="shadow rounded p-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold sign_in_text">Sign in</span>
+            <button class="border-0 bg-transparent p-0">
+                <img class="border-0" src="/images/X.png" alt="Close">
+            </button>
+        </div>
+ 
+        <input name="username" type="text" class="mt-4 form-control rounded py-2 px-3 h-50 shadow-none" placeholder="Name" style="height: 48px;">
+        <input name="email" type="text" class="mt-4 form-control rounded py-2 px-3 h-50 shadow-none" placeholder="Email" style="height: 48px;">
+ 
+        <div class="d-flex mt-3">
+            <button id="otp_button" class="badge rounded-pill w-100 mb-3 mt-2">Get OTP</button>
+        </div>
+    </div>
+</body>
+ 
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/public/customer-public.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/public/checkout-page.css" />
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top border-bottom">
+        <div class="container-fluid container-fluid-main" >
+          <a class="navbar-brand" href="">
+            <img src="../../images/public/Logo.svg" height="40" alt="Logo" id="logo-navbar"/>
+          </a> 
+          <div class="justify-content-end" id="navbarNav">
+            <button class="d-flex justify-content-between align-items-center gap-1 back-btn border rounded-pill px-3 py-2">
+                <img src="/images/public/ArrowLeft.svg" class="view-all-arrow"/>
+                <span class="fw-bold view-all-text">back</span>
+            </button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid container-fluid-main g-5">
+        <div class="row">
+            <!-- Left Side -->
+            <div class="col-12 col-lg-7">
+                <div class="d-flex align-items-center gap-2 gap-md-3 pt-5">
+                <img src="/images/public/Group 1.svg" class="purple-img rounded-2 p-2 flex-shrink-0" />
+                <div class="card-content rounded-3 border text-start ps-3 ps-md-4 py-3 flex-grow-1">
+                    <div class="fw-bold pb-2 pb-md-3">Booking For</div>
+                    <button class="sign-in-button rounded-pill px-3 py-2 border-0 fw-bold">
+                    Sign In
+                    </button>
+                </div>
+                </div>
+                <div
+                class="d-flex align-items-center gap-2 gap-md-3 pt-4 pt-md-5"
+                >
+                <img src="/images/public/MapPin2.svg" class="grey-img rounded-2 p-2 flex-shrink-0" />
+                <div class="card-content-grey rounded-3 border text-start ps-3 ps-md-4 py-3 py-md-4 flex-grow-1">
+                    <div class="fw-bold">Address</div>
+                </div>
+                </div>
+                <div
+                class="d-flex align-items-center gap-2 gap-md-3 pt-4 pt-md-5"
+                >
+                <img src="/images/public/Clock.svg" class="grey-img rounded-2 p-2 flex-shrink-0" />
+                <div class="card-content-grey rounded-3 border text-start ps-3 ps-md-4 py-3 py-md-4 flex-grow-1">
+                    <div class="fw-bold">Slot</div>
+                </div>
+                </div>
+                <div
+                class="d-flex align-items-center gap-2 gap-md-3 pt-4 pt-md-5"
+                >
+                <img src="/images/public/Money.svg" class="grey-img rounded-2 p-2 flex-shrink-0" />
+                <div class="card-content-grey rounded-3 border text-start ps-3 ps-md-4 py-3 py-md-4 flex-grow-1">
+                    <div class="fw-bold">Payment Method</div>
+                </div>
+                </div>
+                <div class="cancel-card px-3 py-3 rounded-3 mt-4 mt-md-5 ms-0 ms-md-5">
+                    <div class="fw-semibold py-1 py-md-2" style="font-size: 14px;">Cancellation Policy</div>
+                    <div style="font-size: 13px;" class="py-1">
+                        Free cancellations if done more than 12 hrs before the service or if a professional isn't assigned. A fee will be charged otherwise.
+                    </div>
+                    <a href="" class="link py-1 py-md-2 fw-bold d-inline-block">Learn more</a>
+                </div>
+            </div>
+            
+            <!-- Right Side -->
+            <div class="col-12 col-lg-5">
+                <h6 class="pt-4 pt-md-5 fw-bold pb-3">Payment Summary</h6>
+                <div class="payment-card border rounded-3 p-3 p-md-4">
+                    <div class="d-flex justify-content-between align-items-center pb-2 pt-2">
+                        <span class="payment-label">Classic full home cleaning (1 BHK)</span>
+                        <span class="payment-value">$24.00</span>
+                    </div> 
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <span class="payment-label">Taxes(5%)</span>
+                        <span class="payment-value">$1.20</span>
+                    </div> 
+                    <hr class="dashed">
+                    <div class="d-flex justify-content-between align-items-center py-2 fw-bold">
+                        <span class="payment-label">Total</span>
+                        <span class="payment-value">$32.20</span>
+                    </div> 
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <span class="payment-label">Coupon code <span class="coupon-name fw-bold">FIRST10</span> Added</span>
+                        <span class="green-col fw-semibold payment-value">-$10.00</span>
+                    </div> 
+                    <hr class="dashed">
+                    <div class="d-flex justify-content-between align-items-center py-2 pb-1 fw-bold payment-total">
+                        <span class="payment-label">Total Amount to Pay</span>
+                        <span class="payment-value">$22.20</span>
+                    </div> 
+                </div>
+
+                <!-- Coupons & Offers Carousel Section -->
+                <div class="pt-4 pt-md-5">
+                    <div class="d-flex justify-content-between align-items-center pb-3">
+                        <h6 class="fw-bold mb-0">Coupons & Offers</h6>
+                        <button class="d-flex justify-content-between align-items-center gap-1 back-btn border rounded-pill px-3 py-2">
+                            <span class="fw-bold view-all-text">View All</span>
+                            <img src="/images/public/ArrowRight.svg" class="view-all-arrow"/>
+                        </button>
+                    </div>
+
+                    <!-- Carousel Container -->
+                    <div class="carousel-container position-relative">
+                        <div class="coupons-wrapper d-flex gap-3 overflow-hidden" id="couponsWrapper">
+                            <!-- Coupon 1 - FIRST10 -->
+                            <div class="coupon-card-item flex-shrink-0">
+                                <div class="coupon-card border rounded-3 p-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <div class="coupon-icon rounded-2 p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#6366F1"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div>
+                                                    <div class="fw-bold coupon-code">FIRST10</div>
+                                                    <div class="coupon-description">10% off your first service</div>
+                                                </div>
+                                                <button class="add-coupon-btn border-0 rounded-pill px-3 py-1 fw-bold align-self-end">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coupon 2 - FREE50 -->
+                            <div class="coupon-card-item flex-shrink-0">
+                                <div class="coupon-card border rounded-3 p-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <div class="coupon-icon rounded-2 p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#6366F1"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div>
+                                                    <div class="fw-bold coupon-code">FREE50</div>
+                                                    <div class="coupon-description">Free s...</div>
+                                                </div>
+                                                <button class="add-coupon-btn border-0 rounded-pill px-3 py-1 fw-bold align-self-end">
+                                                    <img src="/images/public/ArrowRight.svg" style="width: 16px; height: 16px;"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coupon 3 - SAVE20 -->
+                            <div class="coupon-card-item flex-shrink-0">
+                                <div class="coupon-card border rounded-3 p-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <div class="coupon-icon rounded-2 p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#6366F1"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div>
+                                                    <div class="fw-bold coupon-code">SAVE20</div>
+                                                    <div class="coupon-description">Save $20 on deep cleaning</div>
+                                                </div>
+                                                <button class="add-coupon-btn border-0 rounded-pill px-3 py-1 fw-bold align-self-end">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coupon 4 - WELCOME -->
+                            <div class="coupon-card-item flex-shrink-0">
+                                <div class="coupon-card border rounded-3 p-3">
+                                    <div class="d-flex align-items-start gap-2">
+                                        <div class="coupon-icon rounded-2 p-2">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#6366F1"/>
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div>
+                                                    <div class="fw-bold coupon-code">WELCOME</div>
+                                                    <div class="coupon-description">15% off on new services</div>
+                                                </div>
+                                                <button class="add-coupon-btn border-0 rounded-pill px-3 py-1 fw-bold align-self-end">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-nav-btn carousel-prev" id="prevBtn" aria-label="Previous">
+                            <img src="/images/public/ArrowRight.svg" class="arrow"/>
+                        </button>
+                        <button class="carousel-nav-btn carousel-next" id="nextBtn" aria-label="Next">
+                            <img src="/images/public/ArrowRight.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Coupon Carousel Functionality
+        const wrapper = document.getElementById('couponsWrapper');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let scrollAmount = 0;
+        const cardWidth = 280; // Approximate width of card + gap
+        
+        function updateButtons() {
+            const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
+            prevBtn.style.opacity = scrollAmount <= 0 ? '0.5' : '1';
+            prevBtn.style.pointerEvents = scrollAmount <= 0 ? 'none' : 'auto';
+            nextBtn.style.opacity = scrollAmount >= maxScroll ? '0.5' : '1';
+            nextBtn.style.pointerEvents = scrollAmount >= maxScroll ? 'none' : 'auto';
+        }
+        
+        nextBtn.addEventListener('click', () => {
+            scrollAmount += cardWidth;
+            const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
+            scrollAmount = Math.min(scrollAmount, maxScroll);
+            wrapper.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+            setTimeout(updateButtons, 300);
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            scrollAmount -= cardWidth;
+            scrollAmount = Math.max(scrollAmount, 0);
+            wrapper.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+            setTimeout(updateButtons, 300);
+        });
+        
+        // Initialize button states
+        updateButtons();
+        
+        // Update on window resize
+        window.addEventListener('resize', updateButtons);
+    </script>
+  </body>
+</html>

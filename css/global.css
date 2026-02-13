@@ -6,4 +6,229 @@
     background-color: var(--color-white);
     font-family: "Montserrat" , "Helvetica Neue", Arial, sans-serif;
   }
-  
+  /* ================================
+   GLOBAL DESIGN TOKENS
+   = =============================== */
+:root {
+  /* Primary */
+  --color-primary: #2555ff;
+
+  /* Primary shades (dark → light) */
+  --primary-900: #070616;
+  --primary-800: #0e0d2d;
+  --primary-700: #151343;
+  --primary-600: #1c1a5a;
+  --primary-500: #232071;
+  --primary-400: #292687;
+  --primary-300: #302d9e;
+  --primary-200: #3735b4;
+  --primary-100: #3e3acb;
+  --primary-50: #4540e1;
+
+  /* Primary tints */
+  --primary-tint-100: #5853e4;
+  --primary-tint-200: #6a66e7;
+  --primary-tint-300: #7d79ea;
+  --primary-tint-400: #8f8ced;
+  --primary-tint-500: #a2a0f0;
+  --primary-tint-600: #b5b3f3;
+  --primary-tint-700: #c7c6f6;
+  --primary-tint-800: #dad9f9;
+  --primary-tint-900: #ececfc;
+
+  /* Neutrals */
+  --color-text-dark: #333333;
+  --color-text-light: #666666;
+  --color-border-dark: #dddddd;
+  --color-border-light: #cccccc;
+  --color-white: #ffffff;
+}
+
+
+/* ================================
+     TYPOGRAPHY SCALE
+     ================================ */
+
+/* Headings */
+h1,
+.h1 {
+  font-size: 96px;
+  line-height: 128px;
+  font-weight: 600;
+  letter-spacing: -1.5%;
+  color: var(--color-text-dark);
+}
+
+h2,
+.h2 {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -0.5%;
+  color: var(--color-text-dark);
+}
+
+h3,
+.h3 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--color-text-dark);
+}
+
+h4,
+.h4 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: 0.25%;
+  color: var(--color-text-dark);
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--color-text-dark);
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.15%;
+  color: var(--color-text-dark);
+}
+
+/* Subtitles */
+.subtitle-1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.15%;
+}
+
+.subtitle-2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1%;
+}
+
+/* ================================
+     BODY TEXT
+     ================================ */
+
+p,
+.body-1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.5%;
+}
+
+.body-2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25%;
+}
+
+/* ================================
+     BUTTON TEXT
+     ================================ */
+
+button,
+.btn,
+.button-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1.25%;
+}
+
+/* ================================
+     CAPTION & OVERLINE
+     ================================ */
+
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.4%;
+}
+
+.overline {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5%;
+}
+
+/* ================================
+     BOOTSTRAP OVERRIDES
+     ================================ */
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-300);
+  border-color: var(--primary-300);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-300);
+}
+
+/* Borders */
+.border {
+  border-color: var(--color-border-light) !important;
+}
+
+/* Text utilities */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-muted {
+  color: var(--color-text-light) !important;
+}
+
+/* ================================
+     OPTIONAL HELPERS
+     ================================ */
+
+.bg-primary-soft {
+  background-color: var(--primary-tint-800);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-700);
+  color: var(--color-white);
+}
+
+/* Font Color For Disabled Option in SELECT tag */
+select:has(option:disabled:checked) {
+  color: #757575;
+}
+
+/* icon class height and width*/
+.icon {
+  height: 20px;
+  width: 20px;
+}

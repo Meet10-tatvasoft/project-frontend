@@ -1,0 +1,121 @@
+#book_slot {
+    max-width: 400px;
+    padding: 24px;
+    max-height: 412px;
+}
+
+#date_btn{
+    border:1px solid #DDE4EE;
+    font-size:12px;
+    font-weight: bold;
+    color:#333333;
+    width:70px;
+    background-color: #ffffff;
+    height: 30px;
+}
+
+#date_btn:hover{
+    background-color:#ececfc;
+    border:1px solid #8383eb;
+    
+}
+
+#date_btn:focus{
+    background-color:#ececfc;
+    border:1px solid #8383eb;
+    
+}
+
+#time_btn{
+    border:1px solid #DDE4EE;
+    font-size:12px;
+    font-weight: bold;
+    color:#333333;
+    width:70px;
+    background-color: #ffffff;
+    height: 30px;
+}
+
+#time_btn:hover{
+    background-color:#ececfc;
+    border:1px solid #8383eb;
+    
+}
+
+#time_btn:focus{
+    background-color:#ececfc;
+    border:1px solid #8383eb;
+    
+}
+
+.save_btn {
+    background-color: #4540E1;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 100px;
+    font-size: 14px;
+}
+
+#cancel_btn{
+    color: #4540E1;
+    font-size: 14px;
+    background-color:transparent;
+    padding: 8px;
+    border:1px solid #DDE4EE;
+    font-weight: bold;
+    width: 100px;
+}
+
+.expert_arrive_text{
+    display: block;
+    padding-top: 12px;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    #book_slot {
+        max-width: 90%;
+        padding: 20px;
+        max-height: none;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #book_slot {
+        max-width: 100%;
+        padding: 16px;
+        max-height: none;
+    }
+
+    #date_btn, #time_btn {
+        width: 60px;
+        font-size: 11px;
+    }
+
+    .save_btn, #cancel_btn {
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+/* Extra small mobile devices (max-width: 360px) */
+@media (max-width: 360px) {
+    #book_slot {
+        padding: 12px;
+    }
+
+    #date_btn, #time_btn {
+        width: 55px;
+        font-size: 10px;
+        height: 28px;
+    }
+
+    .save_btn, #cancel_btn {
+        width: 70px;
+        font-size: 11px;
+    }
+}

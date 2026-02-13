@@ -1,0 +1,22 @@
+body{
+    width: fit-content !important;
+    padding: 24px;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4540E1;
+    font-size: small;
+  }
+img{
+    height: 20px;
+    width: 20px;
+}
+.street{
+    font-size: small;
+    font-weight: 500;
+}
+.near_place{
+    font-size:smaller;
+    color: #666666;
+}

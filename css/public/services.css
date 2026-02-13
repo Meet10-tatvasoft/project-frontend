@@ -1,0 +1,322 @@
+@import "/css/global.css";
+@import "/css/public/public.global.css";
+
+.button-purple {
+  background-color: rgb(69, 64, 225) ;
+  color: white;
+  font-weight: bold ;
+  font-size: 14px ;
+}
+#user_circle{
+  background: none;
+}
+
+
+.nav-color {
+  color: #666666;
+  size: 16px ;
+}
+
+/* ─────────────────────────────────────────
+   Hero Banner
+───────────────────────────────────────── */
+
+
+.hero-div {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/images/public/services-frame.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  opacity: 0.85;
+  margin-bottom: 0;
+}
+
+/* ─────────────────────────────────────────
+   Service Cards Grid
+───────────────────────────────────────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.service-card {
+  background-color: #f4f4f7;
+  border-radius: 16px;
+  overflow: hidden;
+  /* Stretch card vertically so all cards in a row share the same height */
+  display: flex;
+  flex-direction: column;
+  /* Keyboard / pointer interaction */
+  cursor: pointer;
+  outline: none;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background-color 0.22s ease;
+}
+
+.service-card:hover,
+.service-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  background-color: #ececf5;
+}
+
+.service-card:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-primary, #6c47e8);
+}
+
+.service-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 4rem;
+}
+
+
+.service-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-card-stat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-dark, #1a1a2e);
+  line-height: 1.2;
+}
+
+.service-card-label {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted, #6b7280);
+  margin: 0;
+}
+
+.service-card-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+  /* Subtle lift on card hover */
+  transition: transform 0.22s ease;
+}
+
+.service-card:hover .service-card-icon,
+.service-card:focus-visible .service-card-icon {
+  transform: scale(1.08);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  background-color: #F5F5F5;
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+.footer-text-heading {
+  font-size: 16px;
+}
+
+#logo_image {
+  width: 162px;
+  max-width: 100%;
+}
+
+.social_media {
+  width: 44px;
+}
+
+.social_media_div {
+  height: 44px;
+}
+
+.download-icon {
+  width: 125%;
+}
+
+/* Footer Responsive */
+
+@media (max-width: 875px) {
+  .footer-text {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .download-icon {
+      width: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  #copyright {
+      font-size: 13px;
+  }
+}
+#footer_top_div{
+  padding-left: 7rem; 
+  padding-right: 5rem;
+}
+#footer_bottom_div{
+  padding-left: 7rem; 
+  padding-right: 5rem;
+}
+.container-fluid-main{
+  padding-left: 7rem;
+  padding-right: 5rem;
+}
+@media(max-width : 590px){
+  #footer_top_div{
+      padding-left: 3rem; 
+      padding-right: 3rem;
+  }
+  #footer_bottom_div{
+      padding-left: 3rem; 
+      padding-right: 3rem;
+  }
+  .container-fluid-main{
+      padding-left: 3rem;
+      padding-right: 3rem;
+  }
+}
+@media(max-width : 410px){
+  #footer_top_div{
+      padding-left: 1rem; 
+      padding-right: 10px;
+  }
+  #footer_bottom_div{
+      padding-left: 1rem; 
+      padding-right: 10px;
+  }
+  .container-fluid-main{
+      padding-left: 1rem;
+      padding-right: 10px;
+  }
+}
+
+
+
+/* Bigger Screen Center Content Properly */
+
+@media (min-width: 1400px) {
+  #footer_top_div{
+      padding-left: 11rem; 
+      padding-right: 11rem;
+  }
+  #footer_bottom_div{
+      padding-left: 11rem; 
+      padding-right: 11rem;
+  }
+  .container-fluid-main{
+      padding-left: 11rem;
+      padding-right: 11rem;
+  }
+}
+@media (min-width: 1550px) {
+  #footer_top_div{
+      padding-left: 17rem; 
+      padding-right: 17rem;
+  }
+  #footer_bottom_div{
+      padding-left:17rem; 
+      padding-right: 17rem;
+  }
+  .container-fluid-main{
+      padding-left: 17rem;
+      padding-right: 17rem;
+  }
+}
+@media (min-width: 1800px) {
+  #footer_top_div{
+      padding-left: 20rem; 
+      padding-right: 20rem;
+  }
+  #footer_bottom_div{
+      padding-left:20rem; 
+      padding-right: 20rem;
+  }
+  .container-fluid-main{
+      padding-left: 20rem;
+      padding-right: 20rem;
+  }
+}
+@media (min-width: 1950px) {
+  #footer_top_div{
+      padding-left: 25rem; 
+      padding-right: 25rem;
+  }
+  #footer_bottom_div{
+      padding-left:25rem; 
+      padding-right: 25rem;
+  }
+  .container-fluid-main{
+      padding-left: 25rem;
+      padding-right: 25rem;
+  }
+}
+@media (min-width: 2150px) {
+  #footer_top_div{
+      padding-left: 30rem; 
+      padding-right: 30rem;
+  }
+  #footer_bottom_div{
+      padding-left:30rem; 
+      padding-right: 30rem;
+  }
+  .container-fluid-main{
+      padding-left: 30rem;
+      padding-right: 30rem;
+  }
+}
+@media (min-width: 2300px) {
+  #footer_top_div{
+      padding-left: 33rem; 
+      padding-right: 33rem;
+  }
+  #footer_bottom_div{
+      padding-left:33rem; 
+      padding-right: 33rem;
+  }
+  .container-fluid-main{
+      padding-left: 33rem;
+      padding-right: 33rem;
+  }
+}

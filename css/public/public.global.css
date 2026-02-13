@@ -1,0 +1,147 @@
+
+/* ─────────────────────────────────────────
+   Navbar
+───────────────────────────────────────── */
+.nav-color {
+    color: var(--color-text-light) !important;
+    font-size: 16px;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-color:hover,
+  .nav-color.active {
+    color: var(--color-primary, #6c47e8) !important;
+  }
+  
+  /* Remove Bootstrap's default focus outline on toggler */
+  .navbar-toggler {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  
+  /* Rotate icon when menu is open */
+  .navbar-toggler:not(.collapsed) img {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler img {
+    transition: transform 0.3s ease;
+  }
+
+/* ─────────────────────────────────────────
+   Footer
+───────────────────────────────────────── */
+footer {
+    background-color: #f5f5f5;
+  }
+  
+  #footer_top_div,
+  #footer_bottom_div {
+    padding-left: 7rem;
+    padding-right: 5rem;
+  }
+  
+  #logo_image {
+    width: 162px;
+    max-width: 100%;
+  }
+  
+  .footer-text-heading {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+  }
+  
+  /* Plain footer links — no default blue underline */
+  .footer-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: var(--color-primary, #6c47e8);
+  }
+  
+  .store-badge {
+    display: block;
+    width: 110px;
+    max-width: 100%;
+  }
+  
+  .social_media {
+    width: 44px;
+  }
+  
+  .social_media_div {
+    height: 44px;
+  }
+  
+  /* ─────────────────────────────────────────
+     Responsive overrides
+  ───────────────────────────────────────── */
+  @media (min-width: 1440px) {
+    .footer-text {
+      font-size: 18px;
+    }
+  
+    .footer-text-heading {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 875px) {
+    .footer-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 590px) {
+    #footer_top_div,
+    #footer_bottom_div {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 410px) {
+    #footer_top_div,
+    #footer_bottom_div {
+      padding-left: 1rem;
+      padding-right: 0;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    #copyright {
+      font-size: 13px;
+    }
+}
+
+.container-fluid-main {
+    padding-left: 7rem;
+    padding-right: 5rem;
+  }
+  
+  @media (max-width: 786px) {
+    .container-fluid-main {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }

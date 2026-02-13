@@ -1,0 +1,31 @@
+#select_payment_method{
+    max-width: 325px;
+    padding: 24px;
+    max-height: 380px;
+}
+.save_btn {
+    background-color: #4540E1;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 100px;
+    font-size: 14px;
+}
+#cancel_btn{
+    color: #4540E1;
+    background-color:transparent;
+    padding: 8px;
+    border:1px solid #DDE4EE;
+    font-weight: bold;
+    width: 100px;
+    font-size: 14px;
+}
+#payment_method{
+    border:1px solid #DDE4EE;
+    font-size:12px;
+    color:#333333;
+    width:auto;
+    background-color:#F5F5F5;
+    height: 30px;
+    font-weight: 500;
+}

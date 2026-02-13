@@ -108,15 +108,15 @@ footer{
 @media(max-width : 410px){
     #footer_top_div{
         padding-left: 1rem; 
-        padding-right: 0rem;
+        padding-right: 10px;
     }
     #footer_bottom_div{
         padding-left: 1rem; 
-        padding-right: 0rem;
+        padding-right: 10px;
     }
     .container-fluid-main{
         padding-left: 1rem;
-        padding-right: 0rem;
+        padding-right: 10px;
     }
 }
 

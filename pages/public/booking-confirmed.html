@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/public/booking-confirmed.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Booking Confirmed - HomeCare</title>
+  </head>
+  <body class="">
+    <!-- ── Navbar ── -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white sticky-top border-bottom"
+    >
+      <div class="container-fluid container-fluid-main">
+        <a class="navbar-brand" href="/">
+          <img src="/images/public/Logo.svg" height="40" alt="HomeCare Logo" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- ── Main Content ── -->
+    <main class="container-fluid container-fluid-main mt-md-3 mt-2">
+      <div class="custom-card d-flex flex-column align-items-center">
+        <div class="custom-card-title w-100">
+          <h4 class="fw-bold text-center w-100">
+            Thanks for choosing HomeCare
+          </h4>
+          <p class="fw-semibold text-center mb-5">
+            Your <b class="fw-bold">Full Home Cleaning</b> booking is confirmed
+          </p>
+        </div>
+        <div class="booking-details d-flex flex-column w-100 py-4 gap-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="">Booking Details</h6>
+            <button class="d-flex justify-content-between align-items-center gap-1 border-0 rounded-pill download-btn px-3 py-2" >
+              <img src="/images/public/DownloadSimple.svg" class="download" />
+              <div class="fw-bold d-none d-md-inline">Invoice</div>
+            </button>
+          </div>
+          <div>
+            <p class="subtitle-1 m-0">Classic full home cleaning</p>
+            <p class="m-0">60 Min</p>
+          </div>
+          <div class="w-100 d-flex justify-content-center my-2">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status" >
+              <span class="sr-only"></span>
+            </div>
+          </div>
+
+          <div class="text-center fw-semibold">
+            We are assigning a Service Partner.
+          </div>
+        </div>
+        <table class="table table-borderless" id="booking-table">
+          <tbody>
+            <tr class="">
+              <td class="text-secondary py-3 fw-semibold w-50">Amount Paid</td>
+              <td class="fw-semibold py-3">$22.50</td>
+            </tr>
+            <tr class="">
+              <td class="text-secondary fw-semibold py-3 w-50fw-semibold">
+                Location
+              </td>
+              <td class="fw-semibold py-3">
+                Near Times Square, Apartment No. 87B, Manhattan, New York City,
+                USA
+              </td>
+            </tr>
+            <tr class="border-white">
+              <td class="text-secondary fw-semibold py-3 w-50fw-semibold">
+                Start Date & Time
+              </td>
+              <td class="fw-semibold py-3">26 Jul, 1:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex col-md-8 col-12" style="height: 70px;">
+          <button class="add-service-button rounded-5 fw-bold mt-4 " value="add_services">
+            Add Services
+          </button>
+          <div id="extra_div"></div>
+          <button class="bookings-button rounded-5 fw-bold mt-4" value="my_bookings">
+            My Bookings
+          </button>
+      </div>
+      </div>
+    </main>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
