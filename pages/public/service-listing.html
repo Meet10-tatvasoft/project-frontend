@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Listing - HomeCare</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/public/service-listing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap%22"
+        rel="stylesheet" />
+    <style>
+        html , body{
+            font-family: "Montserrat" , "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top border-bottom">
+        <div class="container-fluid container-fluid-main" >
+          <a class="navbar-brand" href="">
+            <img src="../../images/public/Logo.svg" height="40" alt="Logo" id="logo-navbar"/>
+          </a> 
+          <button class="navbar-toggler toggler-style" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-md-2 py-3 py-md-0">
+              <li class="nav-item">
+                <a href="/pages/public/home-page.html" class="nav-link nav-color" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link nav-color">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link nav-color">Contact Us</a>
+              </li>
+              <li class="nav-item mt-3 mt-md-0">
+                <button class="button-purple border-0 rounded-pill py-2 px-4">
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="container-fluid container-fluid-main my-4">
+        <div class="position-relative">
+            <img src="/images/public/Rectangle 24.svg" alt="" class="img-fluid w-100 rounded-4 contact-img">
+            <div
+                class="position-absolute search-box search-div top-50 start-50 translate-middle text-white text-center m-0 w-md-50 w-75">
+                <div class="d-flex align-items-center">
+
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        class="search-icon text-white flex-shrink-0 position-absolute"
+                        style="left: 24px; pointer-events: none; z-index: 1;">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16ZM18 18l-4.35-4.35" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" class="search-input text-white w-100  "
+                        placeholder="Search for Cleaning Services" id="searchInput" style="z-index: 2;">
+                    <button class="btn-search flex-shrink-0 position-relative" style="z-index: 3;">Search</button>
+                </div>
+            </div>
+            <div class="position-absolute w-100" style="z-index: 3; top:74% ; left:2%">
+                <div class="d-flex w-100 justify-content-between row">
+                    <div class="col-5">
+                        <p class="text-white small fw-medium" style="opacity: 0.9;">120+ Services</p>
+                        <h1 class="hero-title text-white">Cleaning Services</h1>
+                    </div>
+
+                    <div class="col-7 d-flex justify-content-end align-items-end  gap-2 pe-3 pe-lg-5">
+                        <div class="d-flex justify-content-end align-items-end gap-2 text-white small fw-medium">
+                            <img src="/images/public/CheckCircle.svg" alt="">
+                            <span>Verified Professionals</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 text-white small fw-medium">
+                            <img src="/images/public/CheckCircle.svg" alt="">
+                            <span>Superior Stain Removal</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container-fluid container-fluid-main mb-5">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <div class="filters-sidebar  p-4 ">
+
+                    <!-- Full Home Cleaning Filter -->
+                    <div class="border-bottom pb-4 mb-4">
+                        <div class="filter-header d-flex justify-content-between align-items-center py-2"
+                            data-bs-toggle="collapse" data-bs-target="#fullHomeFilter" aria-expanded="true">
+                            <h6 class="mb-0 fw-semibold">Full Home Cleaning</h6>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                class="chevron-icon text-secondary">
+                                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="collapse show" id="fullHomeFilter">
+                            <div class="mt-3">
+                                <div class="filter-option d-flex align-items-center gap-3 mb-3 p-2 rounded">
+                                    <div class="option-image rounded overflow-hidden">
+                                        <img src="/images/public/image 11 (2).svg" 
+                                            alt="Furnished Apartment" class="img-fluid rounded">
+                                    </div>
+                                    <span class="small text-dark">Furnished Apartment</span>
+                                </div>
+                                <div class="filter-option d-flex align-items-center gap-3 mb-3 p-2 rounded">
+                                    <div class="option-image rounded overflow-hidden">
+                                        <img src="/images/public/image 11 (1).svg"
+                                            alt="Unfurnished Apartment" class="img-fluid rounded">
+                                    </div>
+                                    <span class="small text-dark">Unfurnished Apartment</span>
+                                </div>
+                                <div class="filter-option d-flex align-items-center gap-3 p-2 rounded">
+                                    <div class="option-image rounded overflow-hidden">
+                                        <img src="/images/public/image 11 (2).svg"
+                                            alt="Occupied Independent Apartment" class="img-fluid rounded">
+                                    </div>
+                                    <span class="small text-dark">Occupied Independent Apartment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bathroom & Kitchen Cleaning Filter -->
+                    <div class="border-bottom pb-4 mb-4">
+                        <div class="filter-header d-flex justify-content-between align-items-center py-2"
+                            data-bs-toggle="collapse" data-bs-target="#bathroomKitchenFilter">
+                            <h6 class="mb-0 fw-semibold">Bathroom & Kitchen Cleaning</h6>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                class="chevron-icon text-secondary">
+                                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Sofa & Carpet Cleaning Filter -->
+                    <div>
+                        <div class="filter-header d-flex justify-content-between align-items-center py-2"
+                            data-bs-toggle="collapse" data-bs-target="#sofaCarpetFilter">
+                            <h6 class="mb-0 fw-semibold">Sofa & carpet Cleaning</h6>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                class="chevron-icon text-secondary">
+                                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Services List -->
+            <div class="col-lg-9 col-md-8 service-details">
+                <div class="bg-white  p-4 shadow-sm ">
+                    <h4 class="fw-bold mb-2">Furnished Apartment</h4>
+                    <p class="text-muted small mb-0">40 Services</p>
+                </div>
+
+                <!-- Right Service 1 -->
+                <div class="service-card bg-white  p-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 col-12 mb-3 mb-lg-0 ">
+                            <h5 class="service-title mb-2">Classic full home cleaning (1 BHK)</h5>
+                            <div class="d-flex align-items-start flex-column mb-3 flex-wrap">
+                                <span class="d-inline-flex align-items-center small text-secondary mb-2">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-1">
+                                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M8 4v4l2 2" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    60 Min
+                                </span>
+                                <span class="fw-bold subtitle-2">$24.00</span>
+                            </div>
+                            <div style="border-top: 2px dashed #DDE4EE; margin: 15px 0;"></div>
+                            <p class="d-flex align-items-start small text-secondary mb-3">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    class="me-1 mt-1 flex-shrink-0">
+                                    <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+                                </svg>
+                                For light cleaning with mop, excludes disc machine & cabinet's interior cleanin
+                            </p>
+                            <a href="#" class="view-details-link d-inline-flex align-items-center small">
+                                View Details
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="ms-1"
+                                    style="transition: transform 0.2s;">
+                                    <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="col-lg-3 col-12">
+                            <div class="service-image-wrapper position-relative rounded-3">
+                                <img src="/images/public/image 9.svg" alt="Classic full home cleaning"
+                                    class="service-image rounded-3 w-100">
+                                <button
+                                    class="btn-add-service position-absolute start-50 translate-middle-x d-flex align-items-center gap-2 small">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5 mx-4">
+                <!-- Right Service 2 -->
+                <div class="service-card bg-white  p-4 ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 col-12 mb-3 mb-lg-0">
+                            <h5 class="service-title mb-2">Classic full home cleaning (2 BHK)</h5>
+                            <div class="d-flex  align-items-start flex-column mb-3 flex-wrap">
+                                <span class="d-inline-flex align-items-center small text-secondary mb-2">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-1">
+                                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M8 4v4l2 2" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    60 Min
+                                </span>
+                                <span class="fw-bold subtitle-2">$24.00</span>
+            
+                            </div>
+                            <div style="border-top: 2px dashed #DDE4EE; margin: 15px 0;"></div>
+                            <p class="d-flex align-items-start small text-secondary mb-3">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    class="me-1 mt-1 flex-shrink-0">
+                                    <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+                                </svg>
+                                For light cleaning with mop, excludes disc machine & cabinet's interior cleanin
+                            </p>
+                            <a href="#" class="view-details-link d-inline-flex align-items-center small">
+                                View Details
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="ms-1"
+                                    style="transition: transform 0.2s;">
+                                    <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="service-image-wrapper position-relative rounded-3">
+                                <img src="/images/public/image 9 (2).svg" alt="Classic full home cleaning"
+                                    class="service-image rounded-3 w-100">
+                                <button
+                                    class="btn-add-service position-absolute start-50 translate-middle-x d-flex align-items-center gap-2 small">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Service 3 -->
+                <hr class="mt-5 mx-4">
+                <div class="service-card bg-white  p-4  ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 col-12 mb-3 mb-lg-0">
+                            <h5 class="service-title mb-2">Furnished Living Room Cleaning (1 BHK)</h5>
+                            <div class="d-flex  align-items-start flex-column mb-3 flex-wrap">
+                                <span class="d-inline-flex align-items-center small text-secondary mb-2">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-1">
+                                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M8 4v4l2 2" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    60 Min
+                                </span>
+                                <span class="fw-bold subtitle-2">$24.00</span>
+            
+                            </div>
+                            <div style="border-top: 2px dashed #DDE4EE; margin: 15px 0;"></div>
+                            <p class="d-flex align-items-start small text-secondary mb-3">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    class="me-1 mt-1 flex-shrink-0">
+                                    <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+                                </svg>
+                                For light cleaning with mop, excludes disc machine & cabinet's interior cleanin
+                            </p>
+                            <a href="#" class="view-details-link d-inline-flex align-items-center small">
+                                View Details
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="ms-1"
+                                    style="transition: transform 0.2s;">
+                                    <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="service-image-wrapper position-relative rounded-3">
+                                <img src="/images/public/image 9 (1).svg" alt="Classic full home cleaning"
+                                    class="service-image rounded-3 w-100">
+                                <button
+                                    class="btn-add-service position-absolute start-50 translate-middle-x d-flex align-items-center gap-2 small">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Service 4 -->
+                <hr class="mt-5 mx-4">
+                <div class="service-card bg-white  p-4 ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 col-12 mb-3 mb-lg-0">
+                            <h5 class="service-title mb-2">Furnished Bedroom cleaning (1 BHK)</h5>
+                            <div class="d-flex  align-items-start flex-column mb-3 flex-wrap">
+                                <span class="d-inline-flex align-items-center small text-secondary mb-2">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-1">
+                                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M8 4v4l2 2" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    60 Min
+                                </span>
+                                <span class="fw-bold subtitle-2">$24.00</span>
+            
+                            </div>
+                            <div style="border-top: 2px dashed #DDE4EE; margin: 15px 0;"></div>
+                            <p class="d-flex align-items-start small text-secondary mb-3">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    class="me-1 mt-1 flex-shrink-0">
+                                    <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+                                </svg>
+                                For light cleaning with mop, excludes disc machine & cabinet's interior cleanin
+                            </p>
+                            <a href="#" class="view-details-link d-inline-flex align-items-center small">
+                                View Details
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="ms-1"
+                                    style="transition: transform 0.2s;">
+                                    <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="service-image-wrapper position-relative rounded-3">
+                                <img src="/images/public/image 9.svg" alt="Classic full home cleaning"
+                                    class="service-image rounded-3 w-100">
+                                <button
+                                    class="btn-add-service position-absolute start-50 translate-middle-x d-flex align-items-center gap-2 small">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid pt-5 pb-3">
+        <div class="row" id="footer_top_div">
+            <div class="col-xl-3 col-lg-2 col-12 d-flex justify-content-lg-start justify-content-center align-items-start mt-lg-0 mt-2 mb-4 px-0">
+                <img src="../../images/public/Logo.svg" alt="" id="logo_image">
+            </div>
+            <div class="col-lg col-md col-7 mb-md-0 mb-4 ">
+                <div class="row fw-bold mb-3 footer-text-heading">Company</div>
+                <div class="row mb-3 footer-text">About Us</div>  
+                <div class="row mb-3 footer-text">Terms and Condition</div>
+                <div class="row mb-3 footer-text">Privacy Policy</div>
+                <div class="row footer-text">Careers</div>
+            </div>
+            <div class="col-lg col-md col-5 mb-md-0 mb-4">
+                <div class="row fw-bold mb-3 footer-text-heading">For Customers</div>
+                <div class="row mb-3 footer-text">Reviews</div>  
+                <div class="row mb-3 footer-text">Categories</div>
+                <div class="row mb-3 footer-text">Blogs</div>
+                <div class="row footer-text">Contact Us</div>
+            </div>
+            <div class="col-lg col-md col-7">
+                <div class="row fw-bold mb-3 footer-text-heading">For Professionals</div>
+                <div class="row footer-text">Become a Service Partner</div>  
+            </div>
+            <div class="col-xl-1 col-md-2 col-5">
+                <div class="row fw-bold mb-3 footer-text-heading">Download</div>
+                <img class="row mb-3 download-icon footer-text" src="../../images/public/download-on-the-app-store-apple-logo-svgrepo-com.svg" alt="" >
+                <img class="row download-icon footer-text" src="../../images/public/google-play-badge-logo-svgrepo-com.svg" alt="" >
+            </div>
+        </div>
+        <div class="row mt-5" id="footer_top_div">
+          <hr>
+        </div>
+        <div class="row" id="footer_bottom_div">
+            <div class="col-xl-11 col-md-10 col-9 px-0 d-flex " >
+                <div class="align-items-center d-flex footer-text px-lg-3 px-0">
+                    <span id="copyright">&copy; Copyright 2026 HomeCare</span>
+                </div>
+            </div>
+            <div class="col-xl-1 col-md-2 col-3 d-flex align-items-center p-0 social_media_div">
+                <div class="p-0 m-0 d-flex justify-content-center social_media">
+                    <img src="../../images/public/FacebookLogo.svg" alt="">
+                </div>
+                <div class="p-0 m-0 d-flex justify-content-center social_media">
+                    <img src="../../images/public/InstagramLogo.svg" alt="">
+                </div>
+                <div class="p-0 m-0 d-flex justify-content-center social_media">
+                    <img src="../../images/public/LinkedinLogo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script for Search Icon Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchIcon = document.querySelector('.search-icon');
+
+            if (searchInput && searchIcon) {
+                searchInput.addEventListener('input', function () {
+                    if (this.value.length > 0) {
+                        searchIcon.style.opacity = '0';
+                    } else {
+                        searchIcon.style.opacity = '1';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
